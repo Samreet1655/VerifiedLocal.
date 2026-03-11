@@ -1,0 +1,76 @@
+/* .about-container { */
+  /* This assumes your image is in src/assets/ */
+  /* background: url(C:\vl\VerifiedLocal\src\assets\Gemini_Generated_Image_lc6dt4lc6dt4lc6d.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background-color: rgba(245, 248, 250, 0.92); 
+  padding: 40px 40px;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.about-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin-bottom: 20px;
+} */
+
+.about-container {
+  /* This ensures the image touches the navbar exactly */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Fills the screen */
+  
+  /* Background styling */
+  background: url(C:\vl\VerifiedLocal\src\assets\Gemini_Generated_Image_lc6dt4lc6dt4lc6d.png) no-repeat center center fixed;
+  background-size: cover;
+  
+  /* Centering the white box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* THE GAP FIX: This prevents internal text margins from pushing the container down */
+  overflow: hidden; 
+}
+
+.content-box {
+  background-color: rgba(245, 248, 250, 0.94); /* Slightly blueish off-white */
+  padding: 50px 70px;
+  max-width: 800px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  /* Adds a subtle border to match the Corner House look */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.about-text {
+  /* Using a typewriter style font for that classic aesthetic */
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-text strong {
+  color: #1a5276;
+  font-weight: bold;
+}
