@@ -164,3 +164,40 @@
   background-attachment: fixed;
   padding: 60px 20px;
 }
+
+/* Background for the whole services route */
+.services-page-wrapper {
+  background-image: url('/Minimalist pattern of tools and banana.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.services-grid {
+  display: grid;
+  /* This creates 1-4 columns depending on screen width */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
